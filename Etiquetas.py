@@ -2,10 +2,10 @@ from tkinter import *
 from tkinter import ttk
 
 raiz = Tk()
-etqTexto = ttk.Label( raiz, text="Regular show Mordecai")
+etqTexto = ttk.Label( raiz, text="Regular show Mordecai")#Tema interfaz
 etqTexto.grid()
 
-imagen = PhotoImage(file="regularshow.png")
+imagen = PhotoImage(file="regularshow.png")#Archivo
 
 etqImagen = ttk.Label(raiz)
 etqImagen.grid()
