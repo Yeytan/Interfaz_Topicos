@@ -5,8 +5,7 @@ from tkinter import ttk
 
 class Interfaz3:
     def __init__(self,raiz):
-        raiz.title("Inicio de sesion")
-
+        raiz.title("Muestra de Widgets")
 
         self.usuario = StringVar()
         self.contraseña =StringVar()
@@ -27,6 +26,7 @@ class Interfaz3:
         quinFrame = ttk.Frame(raiz, padding=" 20 30 20 30")
         quinFrame.grid(column=1, row=1)
 
+        #Entrys
 
         nombreEntry = ttk.Entry(mainFrame, width=35, textvariable=self.usuario)
         nombreEntry.grid(column=1, row=0)
@@ -53,6 +53,7 @@ class Interfaz3:
         ttk.Label(mainFrame, text="Movil: ").grid(column=0, row=8,padx=15, pady=15) 
 
         #Botones Guardar y cancelar
+        #Frame3
 
         ttk.Button(treeFrame, text="Guardar").grid(column=0, row=15, padx=60) #boton 
         ttk.Button(treeFrame, text="Cancelar").grid(column=2, row=15,padx=60) #boton
@@ -64,8 +65,8 @@ class Interfaz3:
         ttk.Checkbutton(subFrame, text="Musica").grid(column=2, row= 13,padx=5)
         ttk.Checkbutton(subFrame, text="Videojuegos").grid(column=3, row= 13, padx=5)
         
-
         #RadioButtons
+        #Frame4
 
         ttk.Radiobutton(cuarFrame, text="Estudiante").grid(column=3, row=5, sticky=(W,S,N,E))
         ttk.Radiobutton(cuarFrame, text="Empleado").grid(column=3, row=6, sticky=(W,S,N,E))
